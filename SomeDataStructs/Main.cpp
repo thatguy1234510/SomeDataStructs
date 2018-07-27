@@ -5,10 +5,8 @@
 
 using namespace std;
 
-int main()
-{
-
-	vector<float> dataArr = {0.2f, 9.2f, -2.3f, 81.3f, 0.4f};
+void linkedlist_d_test() {
+	vector<float> dataArr = { 0.2f, 9.2f, -2.3f, 81.3f, 0.4f };
 
 	linkedlist_d<float> *test = new linkedlist_d<float>(dataArr);
 	cout << "\nOur linked list: " << test->toString() << endl;
@@ -20,8 +18,12 @@ int main()
 	test->insert(ind9 - 1, 8.0f);
 	cout << "\nAfter inserting 8.0 in its place:   " << test->toString() << endl;
 
-	while (true)
-	{
-	}
+}
+
+
+int main()
+{
+	linkedlist_d_test();
+	while (true){}
 	return 0;
 }
